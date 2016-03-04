@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E10454C1C8A45C400AF61F4 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10454B1C8A45C400AF61F4 /* ItemCell.swift */; };
 		9E81ED3D1C89E47F00C50904 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E81ED3C1C89E47F00C50904 /* AppDelegate.swift */; };
 		9E81ED421C89E47F00C50904 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E81ED401C89E47F00C50904 /* Main.storyboard */; };
 		9E81ED441C89E47F00C50904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E81ED431C89E47F00C50904 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E10454B1C8A45C400AF61F4 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		9E81ED391C89E47F00C50904 /* Homepwnr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwnr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E81ED3C1C89E47F00C50904 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E81ED411C89E47F00C50904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				9E81ED451C89E47F00C50904 /* LaunchScreen.storyboard */,
 				9E81ED481C89E47F00C50904 /* Info.plist */,
 				9E9A4FE81C89EFD6006BE6A4 /* itemsViewController.swift */,
+				9E10454B1C8A45C400AF61F4 /* ItemCell.swift */,
 				9E9A4FEA1C89F3D6006BE6A4 /* Item.swift */,
 				9E9A4FEC1C89FE32006BE6A4 /* ItemStore.swift */,
 			);
@@ -145,6 +148,7 @@
 				9E9A4FEB1C89F3D6006BE6A4 /* Item.swift in Sources */,
 				9E9A4FED1C89FE32006BE6A4 /* ItemStore.swift in Sources */,
 				9E81ED3D1C89E47F00C50904 /* AppDelegate.swift in Sources */,
+				9E10454C1C8A45C400AF61F4 /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

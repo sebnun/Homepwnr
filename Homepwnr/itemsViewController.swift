@@ -18,11 +18,20 @@ class ItemsViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCellWithIdentifier("UITableViewCell")!
+        let cell = tableView.dequeueReusableCellWithIdentifier("ItemCell") as! ItemCell
+        
+        //update the labels to use dynamic type
+        cell.updateLabels()
         
         let item = itemsStore.allItems[indexPath.row]
-        cell.textLabel?.text = item.name
-        cell.detailTextLabel?.text = "$\(item.valueInDollars)"
+        cell.nameLabel.text = item.name
+        cell.serialNumber.text = item.serialNumber
+        cell.valueLabel.text = "$\(item.valueInDollars)"
+        cell.valueLabel.textColor = UIColor.greenColor()
+        
+        if item.valueInDollars >= 50 {
+            cell.valueLabel.textColor = UIColor.redColor()
+        }
         
         return cell
     }
@@ -67,6 +76,8 @@ class ItemsViewController: UITableViewController {
         tableView.contentInset = insets
         tableView.scrollIndicatorInsets = insets
         
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 65
     }
     
     @IBAction func addNewItem(sender: AnyObject) {
