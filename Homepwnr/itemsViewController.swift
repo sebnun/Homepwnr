@@ -12,6 +12,12 @@ class ItemsViewController: UITableViewController {
     
     var itemsStore: ItemStore!
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        navigationItem.leftBarButtonItem = editButtonItem()
+    }
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemsStore.allItems.count
     }
@@ -70,14 +76,12 @@ class ItemsViewController: UITableViewController {
     
     override func viewDidLoad() {
         
-        //to avoid content over the status bar
-        let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.height
-        let insets = UIEdgeInsets(top: statusBarHeight, left: 0, bottom: 0, right: 0)
-        tableView.contentInset = insets
-        tableView.scrollIndicatorInsets = insets
-        
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 65
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        tableView.reloadData()
     }
     
     @IBAction func addNewItem(sender: AnyObject) {
@@ -91,17 +95,6 @@ class ItemsViewController: UITableViewController {
         }
         
  
-    }
-    
-    @IBAction func toggleEditingMode(sender: AnyObject) {
-        
-        if editing {
-            sender.setTitle("Edit", forState: .Normal)
-            setEditing(false, animated: true)
-        } else {
-            sender.setTitle("Done", forState: .Normal)
-            setEditing(true, animated: true)
-        }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

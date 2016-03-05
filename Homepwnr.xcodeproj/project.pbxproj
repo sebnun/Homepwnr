@@ -13,6 +13,7 @@
 		9E81ED421C89E47F00C50904 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E81ED401C89E47F00C50904 /* Main.storyboard */; };
 		9E81ED441C89E47F00C50904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E81ED431C89E47F00C50904 /* Assets.xcassets */; };
 		9E81ED471C89E47F00C50904 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E81ED451C89E47F00C50904 /* LaunchScreen.storyboard */; };
+		9E8516931C8B28D700DC9673 /* MyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8516921C8B28D700DC9673 /* MyTextField.swift */; };
 		9E9A4FE91C89EFD6006BE6A4 /* itemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9A4FE81C89EFD6006BE6A4 /* itemsViewController.swift */; };
 		9E9A4FEB1C89F3D6006BE6A4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9A4FEA1C89F3D6006BE6A4 /* Item.swift */; };
 		9E9A4FED1C89FE32006BE6A4 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9A4FEC1C89FE32006BE6A4 /* ItemStore.swift */; };
@@ -27,6 +28,7 @@
 		9E81ED431C89E47F00C50904 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E81ED461C89E47F00C50904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E81ED481C89E47F00C50904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E8516921C8B28D700DC9673 /* MyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTextField.swift; sourceTree = "<group>"; };
 		9E9A4FE81C89EFD6006BE6A4 /* itemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = itemsViewController.swift; sourceTree = "<group>"; };
 		9E9A4FEA1C89F3D6006BE6A4 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9E9A4FEC1C89FE32006BE6A4 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				9E81ED3C1C89E47F00C50904 /* AppDelegate.swift */,
+				9E8516921C8B28D700DC9673 /* MyTextField.swift */,
 				9E81ED401C89E47F00C50904 /* Main.storyboard */,
 				9E10454D1C8A56B500AF61F4 /* DetailViewController.swift */,
 				9E81ED431C89E47F00C50904 /* Assets.xcassets */,
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E9A4FE91C89EFD6006BE6A4 /* itemsViewController.swift in Sources */,
+				9E8516931C8B28D700DC9673 /* MyTextField.swift in Sources */,
 				9E9A4FEB1C89F3D6006BE6A4 /* Item.swift in Sources */,
 				9E9A4FED1C89FE32006BE6A4 /* ItemStore.swift in Sources */,
 				9E10454E1C8A56B500AF61F4 /* DetailViewController.swift in Sources */,
