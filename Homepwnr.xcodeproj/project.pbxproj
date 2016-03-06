@@ -17,6 +17,7 @@
 		9E9A4FE91C89EFD6006BE6A4 /* itemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9A4FE81C89EFD6006BE6A4 /* itemsViewController.swift */; };
 		9E9A4FEB1C89F3D6006BE6A4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9A4FEA1C89F3D6006BE6A4 /* Item.swift */; };
 		9E9A4FED1C89FE32006BE6A4 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9A4FEC1C89FE32006BE6A4 /* ItemStore.swift */; };
+		9EC8592A1C8CDAC800567C27 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC859291C8CDAC800567C27 /* ImageStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		9E9A4FE81C89EFD6006BE6A4 /* itemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = itemsViewController.swift; sourceTree = "<group>"; };
 		9E9A4FEA1C89F3D6006BE6A4 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9E9A4FEC1C89FE32006BE6A4 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
+		9EC859291C8CDAC800567C27 /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				9E8516921C8B28D700DC9673 /* MyTextField.swift */,
 				9E81ED401C89E47F00C50904 /* Main.storyboard */,
 				9E10454D1C8A56B500AF61F4 /* DetailViewController.swift */,
+				9EC859291C8CDAC800567C27 /* ImageStore.swift */,
 				9E81ED431C89E47F00C50904 /* Assets.xcassets */,
 				9E81ED451C89E47F00C50904 /* LaunchScreen.storyboard */,
 				9E81ED481C89E47F00C50904 /* Info.plist */,
@@ -153,6 +156,7 @@
 				9E9A4FE91C89EFD6006BE6A4 /* itemsViewController.swift in Sources */,
 				9E8516931C8B28D700DC9673 /* MyTextField.swift in Sources */,
 				9E9A4FEB1C89F3D6006BE6A4 /* Item.swift in Sources */,
+				9EC8592A1C8CDAC800567C27 /* ImageStore.swift in Sources */,
 				9E9A4FED1C89FE32006BE6A4 /* ItemStore.swift in Sources */,
 				9E10454E1C8A56B500AF61F4 /* DetailViewController.swift in Sources */,
 				9E81ED3D1C89E47F00C50904 /* AppDelegate.swift in Sources */,

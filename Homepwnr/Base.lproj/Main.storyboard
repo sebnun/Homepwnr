@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fsT-dt-WP8">
-                                <rect key="frame" x="20" y="72" width="560" height="520"/>
+                                <rect key="frame" x="20" y="72" width="560" height="476"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4FS-X4-rzI">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
@@ -85,21 +85,40 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Date Created" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFb-PB-F92">
-                                        <rect key="frame" x="0.0" y="114" width="560" height="406"/>
+                                        <rect key="frame" x="0.0" y="114" width="560" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="248" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="zc7-DU-4rV">
+                                        <rect key="frame" x="0.0" y="143" width="560" height="333"/>
+                                    </imageView>
                                 </subviews>
                             </stackView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2wy-Oy-Jkz">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="d0x-I3-A2T"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem systemItem="camera" id="i3X-ZS-9Dg">
+                                        <connections>
+                                            <action selector="takePicture:" destination="w77-QE-9Kp" id="rIp-06-6WK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="2wy-Oy-Jkz" firstAttribute="leading" secondItem="gKc-Nd-L88" secondAttribute="leading" id="5YH-M9-Zu5"/>
                             <constraint firstItem="fsT-dt-WP8" firstAttribute="trailing" secondItem="gKc-Nd-L88" secondAttribute="trailingMargin" id="MYc-Q0-9We"/>
-                            <constraint firstItem="sfT-tl-Xve" firstAttribute="top" secondItem="fsT-dt-WP8" secondAttribute="bottom" constant="8" symbolic="YES" id="UCU-F0-mwH"/>
+                            <constraint firstAttribute="trailing" secondItem="2wy-Oy-Jkz" secondAttribute="trailing" id="b4V-4V-1aT"/>
                             <constraint firstItem="fsT-dt-WP8" firstAttribute="leading" secondItem="gKc-Nd-L88" secondAttribute="leadingMargin" id="bPG-qy-FNH"/>
+                            <constraint firstItem="sfT-tl-Xve" firstAttribute="top" secondItem="2wy-Oy-Jkz" secondAttribute="bottom" id="bgG-Sb-Ra3"/>
                             <constraint firstItem="fsT-dt-WP8" firstAttribute="top" secondItem="yXf-T1-zvG" secondAttribute="bottom" constant="8" symbolic="YES" id="ekV-WE-XfC"/>
+                            <constraint firstItem="2wy-Oy-Jkz" firstAttribute="top" secondItem="fsT-dt-WP8" secondAttribute="bottom" constant="8" id="plP-z5-h18"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="SGk-Yv-F49" appends="YES" id="tZX-Mk-bdb"/>
@@ -107,6 +126,7 @@
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="qFb-PB-F92" id="IKu-vj-RLe"/>
+                        <outlet property="imageView" destination="zc7-DU-4rV" id="3Kj-nW-tPy"/>
                         <outlet property="nameField" destination="eDg-Zy-KCB" id="Qtx-dY-3Vc"/>
                         <outlet property="serialNumberField" destination="0OH-sv-PIY" id="E8c-B5-boM"/>
                         <outlet property="valueField" destination="e6m-zE-JCI" id="vUB-gA-NOn"/>

@@ -11,6 +11,7 @@ import UIKit
 class ItemsViewController: UITableViewController {
     
     var itemsStore: ItemStore!
+    var imageStore: ImageStore!
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -56,6 +57,7 @@ class ItemsViewController: UITableViewController {
             let deleteAction = UIAlertAction(title: "Delete", style: .Destructive, handler: { (action) -> Void in
                 
                 self.itemsStore.removeItem(item)
+                self.imageStore.deleteImageForKey(item.itemKey)
                 self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
             })
             ac.addAction(deleteAction)
@@ -106,6 +108,7 @@ class ItemsViewController: UITableViewController {
                 let item = itemsStore.allItems[row]
                 let detailViewController = segue.destinationViewController as! DetailViewController
                 detailViewController.item = item
+                detailViewController.imageStore = imageStore
             }
         }
     }
